@@ -1,5 +1,27 @@
 # ai
 
+## 6.0.14
+
+### Patch Changes
+
+- 3f9453f: feat(ai): add timeout option to generateText, streamText, and Agent
+
+## 6.0.13
+
+### Patch Changes
+
+- e2c445d: feat(ai): smoothStream reasoning support
+
+## 6.0.12
+
+### Patch Changes
+
+- d937c8f: Add Image model middleware support via `wrapImageModel` and `ImageModelV3Middleware`.
+- Updated dependencies [d937c8f]
+  - @ai-sdk/provider@3.0.2
+  - @ai-sdk/gateway@3.0.9
+  - @ai-sdk/provider-utils@4.0.4
+
 ## 6.0.11
 
 ### Patch Changes
