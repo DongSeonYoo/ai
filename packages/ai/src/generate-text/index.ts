@@ -9,6 +9,7 @@ export type {
   GenerateTextOnFinishCallback,
   GenerateTextOnEndCallback,
   GenerateTextOnStartCallback,
+  GenerateTextOnStepEndCallback,
   GenerateTextOnStepFinishCallback,
   GenerateTextOnStepStartCallback,
   GenerateTextStartEvent,
@@ -33,7 +34,6 @@ export type {
   OnLanguageModelCallStartCallback,
 } from './language-model-events';
 export * as Output from './output';
-export type { Output as OutputInterface } from './output';
 export type {
   InferCompleteOutput as InferGenerateOutput,
   InferPartialOutput as InferStreamOutput,
@@ -80,6 +80,7 @@ export type {
   ToolApprovalConfiguration,
   ToolApprovalStatus,
 } from './tool-approval-configuration';
+export { detectToolDrift, fingerprintTools } from './tool-fingerprint';
 export type { ToolApprovalRequestOutput } from './tool-approval-request-output';
 export type { ToolApprovalResponseOutput } from './tool-approval-response-output';
 export type {
@@ -102,6 +103,7 @@ export type {
   ToolExecutionStartEvent,
 } from './tool-execution-events';
 export type { ToolInputRefinement } from './tool-input-refinement';
+export type { ToolOrder } from './tool-order';
 export type {
   StaticToolOutputDenied,
   TypedToolOutputDenied,
